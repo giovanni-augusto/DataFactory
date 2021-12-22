@@ -58,8 +58,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "AzureMySqlSource",
-									"queryTimeout": "02:00:00"
+									"type": "MySqlSource"
 								},
 								"sink": {
 									"type": "ParquetSink",
@@ -82,14 +81,8 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "AzureMySqlTable1",
-									"type": "DatasetReference",
-									"parameters": {
-										"tableName": {
-											"value": "@item().table_name",
-											"type": "Expression"
-										}
-									}
+									"referenceName": "MySqlTable1",
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
