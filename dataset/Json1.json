@@ -1,0 +1,20 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageGiovanni",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "@concat(item().table_name, '.json')",
+				"folderPath": "@item().table_schema",
+				"fileSystem": "ingestion"
+			}
+		},
+		"schema": {}
+	}
+}
