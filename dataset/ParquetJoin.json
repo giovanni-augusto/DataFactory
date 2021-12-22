@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "aluguelfull.parquet",
 				"fileSystem": "organization"
 			},
 			"compressionCodec": "snappy"
