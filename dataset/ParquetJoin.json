@@ -1,0 +1,19 @@
+{
+	"name": "ParquetJoin",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageGiovanni",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "organization"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
