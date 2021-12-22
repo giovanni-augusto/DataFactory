@@ -1,0 +1,38 @@
+{
+	"name": "Parquet5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageGiovanni",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "cidade.parquet",
+				"folderPath": "sakila",
+				"fileSystem": "ingestion"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "cidade_id",
+				"type": "INT32"
+			},
+			{
+				"name": "cidade",
+				"type": "UTF8"
+			},
+			{
+				"name": "pais_id",
+				"type": "INT32"
+			},
+			{
+				"name": "ultima_atualizacao",
+				"type": "INT96"
+			}
+		]
+	}
+}
