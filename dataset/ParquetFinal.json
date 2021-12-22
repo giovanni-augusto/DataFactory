@@ -1,0 +1,76 @@
+{
+	"name": "ParquetFinal",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageGiovanni",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "organization"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "aluguel_id",
+				"type": "INT32"
+			},
+			{
+				"name": "data_de_aluguel",
+				"type": "INT96"
+			},
+			{
+				"name": "inventario_id",
+				"type": "INT32"
+			},
+			{
+				"name": "cliente_id",
+				"type": "INT32"
+			},
+			{
+				"name": "data_de_devolucao",
+				"type": "INT96"
+			},
+			{
+				"name": "funcionario_id",
+				"type": "INT_8"
+			},
+			{
+				"name": "ultima_atualizacao",
+				"type": "INT96"
+			},
+			{
+				"name": "loja_id",
+				"type": "INT_8"
+			},
+			{
+				"name": "primeiro_nome",
+				"type": "UTF8"
+			},
+			{
+				"name": "ultimo_nome",
+				"type": "UTF8"
+			},
+			{
+				"name": "email",
+				"type": "UTF8"
+			},
+			{
+				"name": "endereco_id",
+				"type": "INT32"
+			},
+			{
+				"name": "ativo",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "data_criacao",
+				"type": "INT96"
+			}
+		]
+	}
+}
