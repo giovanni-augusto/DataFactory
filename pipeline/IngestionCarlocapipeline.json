@@ -83,7 +83,15 @@
 							"outputs": [
 								{
 									"referenceName": "Json1",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"container": {
+											"value": "ingestion",
+											"type": "Expression"
+										},
+										"folder": "@item().table_schema",
+										"file": "@concat(item().table_name, '.json')"
+									}
 								}
 							]
 						}
